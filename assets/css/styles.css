@@ -1,32 +1,38 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@200;400&display=swap');
 
+/* ============================================================
+   TEMA DARK (mantida a mesma posição do código original)
+   Atualizado com: azul escuro, verde escuro e púrpura
+   ============================================================ */
 :root, :root[data-theme='dark'] {
-  --primary-color: #F0F0F0;
+  --primary-color: rgba(180,160,255,1);            /* lilás suave para destaque */
+  --primary-bg-color: rgba(10,12,20,1);            /* azul-noite profundo */
+  --secondary-bg-color: rgba(20,22,35,1);          /* azul púrpura escuro */
+  --primary-border-color: rgba(40,55,65,1);        /* azul esverdeado escuro */
+  --secondary-border-color: rgba(70,50,85,1);      /* púrpura escuro */
 
-  --primary-bg-color: #111217;
-  --secondary-bg-color: #28292E;
-  --primary-border-color: #28292E;
-	--secondary-border-color: #56575A;
-
-  --title-color: #F0F0F0;
-  --text-color: #9A9A9C;
-  --link-color: #9A9A9C;
-  --icon-color: #C7C8C9;
+  --title-color: rgba(190,200,255,1);              /* azul claro para títulos */
+  --text-color: rgba(130,170,150,1);               /* verde escuro acinzentado */
+  --link-color: rgba(150,140,255,1);               /* roxo-azulado */
+  --icon-color: rgba(80,130,110,1);                /* verde petróleo escuro */
 }
 
+/* ============================================================
+   TEMA LIGHT (mantida a mesma posição original)
+   Atualizado com: verdes claros, azuis suaves
+   ============================================================ */
 :root[data-theme='light'] {
-  --primary-color: #0B0B0F;
+  --primary-color: rgba(5,25,35,1);                /* azul petróleo escuro */
+  --primary-bg-color: rgba(225,245,245,1);         /* azul esverdeado suave */
+  --secondary-bg-color: rgba(195,230,225,1);       /* verde água pastel */
+  --primary-border-color: rgba(160,210,210,1);     /* azul claro */
+  --secondary-border-color: rgba(120,165,165,1);   /* verde azulado */
 
-	--primary-bg-color: #E9E9E9;
-	--secondary-bg-color: #C7C8C9;
-	--primary-border-color: #C7C8C9;
-	--secondary-border-color: #9A9A9C;
-
-	--title-color: #0B0B0F;
-	--text-color: #28292E;
-	--link-color: #28292E;
-	--icon-color: #56575A;
+  --title-color: rgba(0,60,70,1);                  /* azul profundo */
+  --text-color: rgba(20,70,70,1);                  /* verde escuro suave */
+  --link-color: rgba(0,90,110,1);                  /* azul vibrante */
+  --icon-color: rgba(45,120,120,1);                /* verde-azul médio */
 }
 
 html[data-theme='light'] .brand__logo {
@@ -519,7 +525,19 @@ footer p {
   padding: 1rem;
 }
 
-/* Responsividade */
+/* ============================================================
+   HOVER EM <span> SOMENTE NO TEMA DARK  
+   Azul claro suave ao passar o mouse
+   ============================================================ */
+html[data-theme='dark'] span:hover {
+  background: rgba(120,170,255,0.25);
+  transition: 0.2s ease-in-out;
+  border-radius: 0.25rem;
+}
+
+/* ------------------------------------------------------------
+   RESPONSIVIDADE – permanecem exatamente como no original
+------------------------------------------------------------- */
 @media (min-width: 768px) {
   .header {
     position: fixed;

@@ -1,31 +1,78 @@
-const toggleTheme = document.getElementById("toggleTheme");
-const rootHtml = document.documentElement
-const accordionHeaders = document.querySelectorAll(".accordion__header");
-const menuLinks = document.querySelectorAll(".menu__link");
+document.addEventListener('DOMContentLoaded', () => {
+    // 1. Funcionalidade de Alternância de Tema (Dark/Light Mode)
+    const toggleThemeButton = document.getElementById('toggleTheme');
+    const htmlElement = document.documentElement;
+    const themeKey = 'portfolioTheme'; // Chave para localStorage
 
-function changeTheme(){
-  const currentTheme = rootHtml.getAttribute("data-theme");
+    // Função para aplicar o tema salvo ou o padrão 'dark'
+    const applyTheme = (theme) => {
+        htmlElement.setAttribute('data-theme', theme);
+        // Atualiza o ícone (sol para light, lua para dark)
+        toggleThemeButton.classList.toggle('bi-sun', theme === 'dark');
+        toggleThemeButton.classList.toggle('bi-moon-fill', theme === 'light');
+    };
 
-  currentTheme === "dark" ? rootHtml.setAttribute("data-theme", "light") : rootHtml.setAttribute("data-theme", "dark")
+    // Carrega o tema do localStorage ao iniciar
+    const savedTheme = localStorage.getItem(themeKey) || 'dark';
+    applyTheme(savedTheme);
 
-  toggleTheme.classList.toggle("bi-sun")
-  toggleTheme.classList.toggle("bi-moon-stars")
-}
+    // Adiciona o listener para alternar o tema ao clicar
+    toggleThemeButton.addEventListener('click', () => {
+        const currentTheme = htmlElement.getAttribute('data-theme');
+        const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
 
-toggleTheme.addEventListener("click", changeTheme);
+        applyTheme(newTheme);
+        localStorage.setItem(themeKey, newTheme); // Salva a preferência
+    });
 
-accordionHeaders.forEach(header => {
-  header.addEventListener("click", () => {
-    const accordionItem = header.parentElement;
-    const accordionActive = accordionItem.classList.contains("active");
+    // 2. Funcionalidade do Acordeão (Accordion)
+    const accordion = document.getElementById('accordion');
 
-    accordionActive ? accordionItem.classList.remove("active") : accordionItem.classList.add("active");
-  })
-})
+    // Verifica se o acordeão existe no HTML
+    if (accordion) {
+        accordion.addEventListener('click', (event) => {
+            const header = event.target.closest('.accordion__header');
+            
+            if (header) {
+                const item = header.parentElement;
+                const body = item.querySelector('.accordion__body');
+                const isActive = item.classList.contains('active');
 
-menuLinks.forEach(item => {
-  item.addEventListener("click", () => {
-    menuLinks.forEach(i => i.classList.remove("active"));
-    item.classList.add("active");
-  })
-})
+                // Fecha todos os outros itens
+                document.querySelectorAll('.accordion__item.active').forEach(activeItem => {
+                    if (activeItem !== item) {
+                        activeItem.classList.remove('active');
+                    }
+                });
+
+                // Alterna o estado do item clicado
+                if (isActive) {
+                    item.classList.remove('active');
+                } else {
+                    item.classList.add('active');
+                }
+            }
+        });
+    }
+
+    // 3. Listener para navegação mobile e scroll suave (opcional, mas recomendado)
+    document.querySelectorAll('.menu__link').forEach(link => {
+        link.addEventListener('click', (e) => {
+            const href = link.getAttribute('href');
+            if (href.startsWith('#')) {
+                e.preventDefault();
+                const targetId = href.substring(1);
+                const targetElement = document.getElementById(targetId);
+
+                if (targetElement) {
+                    targetElement.scrollIntoView({ behavior: 'smooth' });
+                }
+                
+                // Remove 'active' de todos e adiciona ao clicado
+                document.querySelectorAll('.menu__link').forEach(l => l.classList.remove('active'));
+                link.classList.add('active');
+            }
+        });
+    });
+
+});

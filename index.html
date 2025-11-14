@@ -1,392 +1,317 @@
 <!DOCTYPE html>
-<html lang="pt-BR" data-theme="dark">
+<html lang="pt-br" data-theme="dark">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Elidiana Andrade | Portfolio para o Lab da DIO</title>
-  <meta name="description" content="Portfólio da desenvolvedora front-end Elidiana Andrade para compartilhar projetos e habilidades desenvolvidas.">
+  <title>Cesar Menezes | Portfolio Front-end</title>
+  <meta name="description" content="Portfólio de Cesar Menezes, Desenvolvedor Front-end focado em interfaces modernas e criativas.">
 
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
   <link rel="stylesheet" href="assets/css/styles.css">
 </head>
+
 <body>
+
+  <!-- HEADER -->
   <header class="header">
     <nav class="header__nav">
       <ul class="menu menu--principal">
         <li class="menu__item">
-          <a class="menu__link active" href="#home">
-            <span class="menu__text">Home</span>
-          </a>
+          <a class="menu__link active" href="#home"><span class="menu__text">Home</span></a>
         </li>
         <li class="menu__item">
-          <a class="menu__link" href="#projetos">
-            <span class="menu__text">Projetos</span>
-          </a>
+          <a class="menu__link" href="#projetos"><span class="menu__text">Projetos</span></a>
         </li>
         <li class="menu__item">
-          <a class="menu__link" href="#sobre">
-            <span class="menu__text">Sobre</span>
-          </a>
+          <a class="menu__link" href="#sobre"><span class="menu__text">Sobre</span></a>
         </li>
         <li class="menu__item">
-          <a class="menu__link" href="#contato">
-            <span class="menu__text">Contato</span>
-          </a>
+          <a class="menu__link" href="#contato"><span class="menu__text">Contato</span></a>
         </li>
       </ul>
     </nav>
+
     <div class="header__brand">
       <a href="#home">
         <img class="brand__logo" src="assets/images/logo-ea.png" alt="Logo EA">
       </a>
     </div>
+
     <div class="header__toggle">
       <i id="toggleTheme" class="bi bi-sun"></i>
     </div>
   </header>
+
+  <!-- NAV MOBILE -->
   <nav class="nav--mobile">
     <ul class="menu menu--mobile">
       <li class="menu__item">
         <a class="menu__link active" href="#home">
-          <i class="menu__icon bi bi-house-door"></i>
-          <span class="menu__text">Home</span>
+          <i class="menu__icon bi bi-house-door"></i><span class="menu__text">Home</span>
         </a>
       </li>
       <li class="menu__item">
         <a class="menu__link" href="#projetos">
-          <i class="menu__icon bi bi-window-stack"></i>
-          <span class="menu__text">Projetos</span>
+          <i class="menu__icon bi bi-window-stack"></i><span class="menu__text">Projetos</span>
         </a>
       </li>
       <li class="menu__item">
         <a class="menu__link" href="#sobre">
-          <i class="menu__icon bi bi-person"></i>
-          <span class="menu__text">Sobre</span>
+          <i class="menu__icon bi bi-person"></i><span class="menu__text">Sobre</span>
         </a>
       </li>
       <li class="menu__item">
         <a class="menu__link" href="#contato">
-          <i class="menu__icon bi bi-envelope"></i>
-          <span class="menu__text">Contato</span>
+          <i class="menu__icon bi bi-envelope"></i><span class="menu__text">Contato</span>
         </a>
       </li>
     </ul>
   </nav>
 
+  <!-- HOME -->
   <main id="home">
     <div class="main__content1">
-      <h1><b>Soluções Criativas &</b> Desenvolvimento Front-end</h1>
-      <p>Elidiana Andrade, Salvador-BA, Desenvolvedora e Instrutora Front-end.</p> 
+      <h1><strong>Soluções Criativas &</strong> Desenvolvimento Front-end</h1>
+      <p>Cesar Menezes, Rio de Janeiro-RJ, Desenvolvedor Front-end Júnior.</p>
+
       <ul class="menu menu--social">
-        <li>
-          <a class="menu__link" href="https://github.com/elidianaandrade" target="_blank">
-            <i class="menu__icon bi bi-github"></i>
-          </a>
-        </li>
-        <li>
-          <a class="menu__link" href="https://www.linkedin.com/in/elidianaandrade/" target="_blank">
-            <i class="menu__icon bi bi-linkedin"></i>
-          </a>
-        </li>
-        <li>
-          <a class="menu__link" href="" target="_blank">
-            <i class="menu__icon bi bi-instagram"></i>
-          </a>
-        </li>
+        <li><a class="menu__link" href="" target="_blank"><i class="menu__icon bi bi-github"></i></a></li>
+        <li><a class="menu__link" href="" target="_blank"><i class="menu__icon bi bi-linkedin"></i></a></li>
+        <li><a class="menu__link" href="" target="_blank"><i class="menu__icon bi bi-instagram"></i></a></li>
       </ul>
+
       <a href="#projetos">
         <button class="btn btn--primary">
-          <span>Ver Projetos</span>
-          <i class="bi bi-arrow-down-right"></i>
-        </button>  
+          <span>Ver Projetos</span><i class="bi bi-arrow-down-right"></i>
+        </button>
       </a>
     </div>
+
     <div class="main__content2">
-      <iframe src="https://www.youtube.com/embed/HXKz2-Sohfo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/HXKz2-Sohfo" frameborder="0" allowfullscreen></iframe>
     </div>
   </main>
 
+  <!-- TECHNOLOGIES -->
   <section class="technologies">
     <h2>Conhecimento nas principais tecnologias do mercado</h2>
     <ul class="technologies__list">
-      <li class="technologies__item">
-        <img class="technologies__logo" src="assets/images/technologies/Angular.svg" alt="Logo Angular">
-      </li>
-      <li class="technologies__item">
-        <img class="technologies__logo" src="assets/images/technologies/TypeScript.svg" alt="Logo TypeScript">
-      </li>
-      <li class="technologies__item">
-        <img class="technologies__logo" src="assets/images/technologies/Bootstrap.svg" alt="Logo Bootstrap">
-      </li>
-      <li class="technologies__item">
-        <img class="technologies__logo" src="assets/images/technologies/SASS.svg" alt="Logo SASS">
-      </li>
+      <li class="technologies__item"><img class="technologies__logo" src="assets/images/technologies/Angular.svg" alt="Angular"></li>
+      <li class="technologies__item"><img class="technologies__logo" src="assets/images/technologies/TypeScript.svg" alt="TypeScript"></li>
+      <li class="technologies__item"><img class="technologies__logo" src="assets/images/technologies/Bootstrap.svg" alt="Bootstrap"></li>
+      <li class="technologies__item"><img class="technologies__logo" src="assets/images/technologies/SASS.svg" alt="SASS"></li>
     </ul>
   </section>
 
+  <!-- PROJECTS -->
   <section id="projetos" class="projects">
     <h2>Projetos</h2>
+
     <div class="projects__container">
+
+      <!-- CARD 1 -->
       <div class="projects__card">
-        <img class="card__cover" src="assets/images/projects/josisbox.jpg" alt="Capa Josi's Box">
+        <img class="card__cover" src="assets/images/projects/josisbox.jpg" alt="Projeto 1">
         <div class="card__body">
-          <h3 class="card__title">Josi’s Box Ecommerce</h3>
-          <p class="card__description">Ecommerce de Livros</p>
+          <h3 class="card__title">Projeto 1</h3>
+          <p class="card__description">Breve descrição do projeto.</p>
           <ul class="card__list">
-            <li class="card__item">Listagem de favoritos;</li>
-            <li class="card__item">Carrinho de compras;</li>
-            <li class="card__item">Filtragem por preço e categoria.</li>
+            <li class="card__item">Funcionalidade principal;</li>
+            <li class="card__item">Tecnologia usada;</li>
+            <li class="card__item">Seu principal desafio.</li>
           </ul>
+
           <ul class="technologies__list">
-            <li class="technologies__item">
-              <img class="technologies__logo" src="assets/images/technologies/Angular.svg" alt="Logo Angular">
-            </li>
-            <li class="technologies__item">
-              <img class="technologies__logo" src="assets/images/technologies/TypeScript.svg" alt="Logo TypeScript">
-            </li>
-            <li class="technologies__item">
-              <img class="technologies__logo" src="assets/images/technologies/Bootstrap.svg" alt="Logo Bootstrap">
-            </li>
-            <li class="technologies__item">
-              <img class="technologies__logo" src="assets/images/technologies/SASS.svg" alt="Logo SASS">
-            </li>
+            <li class="technologies__item"><img class="technologies__logo" src="assets/images/technologies/Angular.svg"></li>
+            <li class="technologies__item"><img class="technologies__logo" src="assets/images/technologies/TypeScript.svg"></li>
           </ul>
+
           <div class="card__buttons">
-            <button class="btn btn--primary">
-              <span>Prévia</span>
-              <i class="bi bi-arrow-up-right"></i>
-            </button>  
-            <button class="btn">
-              <span>Repositório</span>
-            </button>  
+            <button class="btn btn--primary"><span>Prévia</span><i class="bi bi-arrow-up-right"></i></button>
+            <button class="btn"><span>Repositório</span></button>
           </div>
         </div>
       </div>
+
+      <!-- CARD 2 (REVERSE) -->
       <div class="projects__card card--reverse">
-        <img class="card__cover" src="assets/images/projects/archstil.jpg" alt="Capa Archstil">
+        <img class="card__cover" src="assets/images/projects/archstil.jpg" alt="Projeto 2">
         <div class="card__body">
-          <h3 class="card__title">Archstil Blog</h3>
-          <p class="card__description">A história por trás dos Estilos Arquitetônicos.</p>
+          <h3 class="card__title">Projeto 2</h3>
+          <p class="card__description">Breve descrição do projeto.</p>
           <ul class="card__list">
-            <li class="card__item">Postagens relacionadas e em destaque;</li>
-            <li class="card__item">Filtragem por tags e categorias;</li>
-            <li class="card__item">Biografia do autor.</li>
+            <li class="card__item">Funcionalidade principal;</li>
+            <li class="card__item">Tecnologia usada;</li>
+            <li class="card__item">Seu principal desafio.</li>
           </ul>
+
           <ul class="technologies__list">
-            <li class="technologies__item">
-              <img class="technologies__logo" src="assets/images/technologies/Angular.svg" alt="Logo Angular">
-            </li>
-            <li class="technologies__item">
-              <img class="technologies__logo" src="assets/images/technologies/TypeScript.svg" alt="Logo TypeScript">
-            </li>
-            <li class="technologies__item">
-              <img class="technologies__logo" src="assets/images/technologies/Bootstrap.svg" alt="Logo Bootstrap">
-            </li>
-            <li class="technologies__item">
-              <img class="technologies__logo" src="assets/images/technologies/SASS.svg" alt="Logo SASS">
-            </li>
+            <li class="technologies__item"><img class="technologies__logo" src="assets/images/technologies/Bootstrap.svg"></li>
+            <li class="technologies__item"><img class="technologies__logo" src="assets/images/technologies/SASS.svg"></li>
           </ul>
+
           <div class="card__buttons">
-            <button class="btn btn--primary">
-              <span>Prévia</span>
-              <i class="bi bi-arrow-up-right"></i>
-            </button>  
-            <button class="btn">
-              <span>Repositório</span>
-            </button>  
+            <button class="btn btn--primary"><span>Prévia</span><i class="bi bi-arrow-up-right"></i></button>
+            <button class="btn"><span>Repositório</span></button>
           </div>
         </div>
       </div>
+
+      <!-- CARD 3 -->
       <div class="projects__card">
-        <img class="card__cover" src="assets/images/projects/games-store.jpg" alt="Capa Games Store">
+        <img class="card__cover" src="assets/images/projects/games-store.jpg" alt="Projeto 3">
         <div class="card__body">
-          <h3 class="card__title">Games Store</h3>
-          <p class="card__description">Loja online de Games.</p>
+          <h3 class="card__title">Projeto 3</h3>
+          <p class="card__description">Breve descrição do projeto.</p>
           <ul class="card__list">
-            <li class="card__item">Listagem de favoritos;</li>
-            <li class="card__item">Carrinho de compras;</li>
-            <li class="card__item">Filtragem por preço e categoria.</li>
+            <li class="card__item">Funcionalidade principal;</li>
+            <li class="card__item">Tecnologia usada;</li>
+            <li class="card__item">Seu principal desafio.</li>
           </ul>
+
           <ul class="technologies__list">
-            <li class="technologies__item">
-              <img class="technologies__logo" src="assets/images/technologies/Angular.svg" alt="Logo Angular">
-            </li>
-            <li class="technologies__item">
-              <img class="technologies__logo" src="assets/images/technologies/TypeScript.svg" alt="Logo TypeScript">
-            </li>
-            <li class="technologies__item">
-              <img class="technologies__logo" src="assets/images/technologies/Bootstrap.svg" alt="Logo Bootstrap">
-            </li>
-            <li class="technologies__item">
-              <img class="technologies__logo" src="assets/images/technologies/SASS.svg" alt="Logo SASS">
-            </li>
+            <li class="technologies__item"><img class="technologies__logo" src="assets/images/technologies/Angular.svg"></li>
+            <li class="technologies__item"><img class="technologies__logo" src="assets/images/technologies/TypeScript.svg"></li>
           </ul>
+
           <div class="card__buttons">
-            <button class="btn btn--primary">
-              <span>Prévia</span>
-              <i class="bi bi-arrow-up-right"></i>
-            </button>  
-            <button class="btn">
-              <span>Repositório</span>
-            </button>  
+            <button class="btn btn--primary"><span>Prévia</span><i class="bi bi-arrow-up-right"></i></button>
+            <button class="btn"><span>Repositório</span></button>
           </div>
         </div>
       </div>
-      <a href="https://github.com/elidianaandrade">
+
+      <a href="">
         <button class="btn btn--primary">
-          <span>Ver Todos os Projetos</span>
-          <i class="bi bi-arrow-up-right"></i>
-        </button>  
+          <span>Ver Todos os Projetos</span><i class="bi bi-arrow-up-right"></i>
+        </button>
       </a>
+
     </div>
   </section>
 
+  <!-- ABOUT -->
   <section id="sobre" class="about">
     <div class="about__content1">
-      <img class="about__photo" src="assets/images/avatar.jpg" alt="">
+      <img class="about__photo" src="assets/images/avatar.jpg" alt="Foto de Cesar Menezes">
+
       <div class="about__description">
         <h2>Sobre mim</h2>
-        <p>Elidiana Andrade. Apaixonada por artes e tecnologia, meu primeiro "Hello World" foi na pré-adolescência quando tive contato com HTML, CSS e um pouco de JavaScript e Notepad++. Atualmente curso especialização em Desenvolvimento de Software com Metodologias Ágeis e atuo como instrutora e desenvolvedora freelance.
-        </p>  
+        <p>
+          Minha paixão por tecnologia começou cedo, mas foi em 2024 que decidi focar no Desenvolvimento Front-End. Concluí o curso Técnico em Informática pela FAETEC, onde tive a base prática e teórica em lógica de programação, hardware e redes.
+          <br><br>
+          Após isso, mergulhei no aprendizado do desenvolvimento web por meio da Digital Innovation One, concluindo cursos e bootcamps que reforçaram minhas habilidades em HTML, CSS, JavaScript e ferramentas essenciais.
+          <br><br>
+          Meu objetivo é iniciar minha carreira como Desenvolvedor Front-End Júnior, contribuindo com projetos reais e evoluindo constantemente.
+        </p>
+
         <div class="about__icons">
           <i class="bi bi-translate"></i>
-          <span>Inglês: Intermediário | Espanhol: Básico</span>
+          <span>Idioma: Português (Nativo)</span>
         </div>
+
         <div class="description__buttons">
-          <a href="https://www.linkedin.com/in/elidianaandrade/" target="_blank">
+          <a href="" target="_blank">
             <button class="btn btn--primary">
-              <span>Conecte-se Comigo</span>
-              <i class="bi bi-arrow-up-right"></i>
-            </button> 
+              <span>Conecte-se Comigo</span><i class="bi bi-arrow-up-right"></i>
+            </button>
           </a>
           <a href="">
-            <button class="btn">
-              <span>Currículo</span>
-            </button>
+            <button class="btn"><span>Currículo</span></button>
           </a>
         </div>
       </div>
     </div>
+
     <div class="about__content2">
       <div class="col1">
         <div class="row1">
           <h3>Formação</h3>
-          <h4>Desenvolvimento de Software com Metodologia Ágil</h4>
-          <span>Abr 2023 - Atualmente</span>
+
+          <h4>Técnico em Informática</h4>
+          <span>Concluído em 2024</span>
           <div class="about__icons">
             <i class="bi bi-bank"></i>
-            <span>Universidade Salvador</span>
+            <span>FAETEC – Fundação de Apoio à Escola Técnica</span>
           </div>
+
+          <h4>Operador de Computador</h4>
+          <span>Concluído em 2023</span>
           <div class="about__icons">
             <i class="bi bi-mortarboard"></i>
-            <span>Pós-graduação Lato Sensu - Especialização</span>
+            <span>FAETEC – Formação Profissional</span>
           </div>
         </div>
+
         <div class="row2">
           <h3>Experiências</h3>
-          <h4>Instrutora</h4>
-          <span>Digital Innovation One. Fev 2023 - Atualmente</span>
-          <span>Produção de conteúdos educacionais direcionados a 
-            alunos iniciantes que desejam construir uma base no Desenvolvimento Front-end.
-          </span>
+          <h4>Projetos Práticos de Desenvolvimento Front-End</h4>
+          <span>2024 - 2025</span>
+
           <ul class="about__list">
-            <li class="about__item">Elaboração de ementas;</li>
-            <li class="about__item">Ministração de aulas assíncronas;</li>
-            <li class="about__item">Produção de materiais complementares.</li>
+            <li class="about__item">Criação de páginas web responsivas;</li>
+            <li class="about__item">Desenvolvimento de interfaces com HTML, CSS e JS;</li>
+            <li class="about__item">Projetos desenvolvidos durante cursos e bootcamps;</li>
+            <li class="about__item">Aprimoramento contínuo em Front-End.</li>
           </ul>
         </div>
       </div>
+
       <div class="col2">
         <h3>Cursos</h3>
         <div id="accordion">
+
           <div class="accordion__item active">
             <button class="accordion__header start">
-              <span>Versionamento de Código com Git e GitHub</span>
+              <span>Fundamentos de HTML e CSS</span>
               <i class="bi bi-caret-down-fill"></i>
             </button>
             <div class="accordion__body">
-              <p>
-                Digital Innovation One. Fev 2023. 2h.
-              </p>
-              <p>
-                O que é versionamento de código, Git e GitHub. Como instalar e configurar o Git em diferentes sistemas 
-                operacionais e como autenticar via Token e SSH. Como manusear repositórios, indo desde a criação e clonagem 
-                até o gerenciamento de branches, passando por todas as etapas de salvar, desfazer e sincronizar alterações 
-                com o repositório remoto. 
-              </p>
+              <p>Digital Innovation One — Concluído em 2024.</p>
             </div>
           </div>
+
           <div class="accordion__item">
             <button class="accordion__header">
-              <span>Contribuindo em um Projeto Open Source no GitHub</span>
+              <span>Bootcamp Front-End do Zero</span>
               <i class="bi bi-caret-down-fill"></i>
             </button>
             <div class="accordion__body">
-              <p>
-                Digital Innovation One. Fev 2023. 1h.
-              </p>
-              <p>
-                Lab prático sobre colaboração em projetos de código aberto.
-              </p>
+              <p>Digital Innovation One — HTML, CSS, JS, Git e GitHub.</p>
             </div>
           </div>
-          <div class="accordion__item">
-            <button class="accordion__header end">
-              <span>Organizando seus Estudos com os Roadmaps DIO e o Notion</span>
-              <i class="bi bi-caret-down-fill"></i>
-            </button>
-            <div class="accordion__body end">
-              <p>
-                Digital Innovation One. Fev 2023. 2h.
-              </p>
-              <p>
-                Otimização dos estudos com os Roadmaps DIO, construindo um caderno de estudos com a ferramenta Notion.
-              </p>
-            </div>
-          </div>
+
         </div>
+      </div>
+    </div>
   </section>
-  
+
+  <!-- CONTACT -->
   <section id="contato" class="contact">
     <h2>Contate-me</h2>
-    <p>Estou disponível para serviços e novas conexões. Contate-me via 
-      e-mail e conecte-se comigo através das minhas redes sociais.
-    </p>
+    <p>Estou disponível para oportunidades e novas conexões. Entre em contato por e-mail e acompanhe minhas redes sociais.</p>
+
     <ul class="menu menu--social">
-      <li>
-        <a class="menu__link" href="https://github.com/elidianaandrade" target="_blank">
-          <i class="menu__icon bi bi-github"></i>
-          <span>GitHub</span>
-        </a>
-      </li>
-      <li>
-        <a class="menu__link" href="https://www.linkedin.com/in/elidianaandrade/" target="_blank">
-          <i class="menu__icon bi bi-linkedin"></i>
-          <span>LinkedIn</span>
-        </a>
-      </li>
-      <li>
-        <a class="menu__link" href="" target="_blank">
-          <i class="menu__icon bi bi-instagram"></i>
-          <span>Instagram</span>
-        </a>
-      </li>
+      <li><a class="menu__link" href="" target="_blank"><i class="menu__icon bi bi-github"></i><span>GitHub</span></a></li>
+      <li><a class="menu__link" href="" target="_blank"><i class="menu__icon bi bi-linkedin"></i><span>LinkedIn</span></a></li>
+      <li><a class="menu__link" href="" target="_blank"><i class="menu__icon bi bi-instagram"></i><span>Instagram</span></a></li>
     </ul>
-    <a href="mailto:elidianaandrade@outlook.com">
-      <button class="btn btn--primary">
-        <span class="email">elidianaandrade@outlook.com</span>
-      </button>  
+
+    <a href="mailto:">
+      <button class="btn btn--primary"><span>Enviar E-mail</span></button>
     </a>
   </section>
 
+  <!-- FOOTER -->
   <footer>
     <p>
-      © 2023. Portfólio desenvolvido para fins educativos no Lab "Construindo seu Portfolio Front-end do Zero" da 
-      <a href="https://www.dio.me/" target="_blank">Digital Innovation One</a> por 
-      <a href="https://github.com/elidianaandrade" target="_blank">Elidiana Andrade</a>.
+      © 2025. Portfólio desenvolvido por intermédio de video aulas no Lab "Construindo seu Portfolio Front-end do Zero" da 
+      <a href="https://www.dio.me/" target="_blank">Digital Innovation One</a>
+      por <a href="https://github.com/elidianaandrade" target="_blank">Elidiana Andrade</a>.
     </p>
   </footer>
+
   <script src="assets/js/scripts.js"></script>
 </body>
 </html>
